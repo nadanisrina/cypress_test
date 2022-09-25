@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run pre-commit
-# npm enforce-branch-name '(hotfix|bugfix|feature)\/.+' --ignore '(staging|develop|master)'
+npm run pre-push
 

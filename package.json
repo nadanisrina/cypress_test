@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "prettier --write",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "pre-push": "enforce-branch-name '(hotfix|bugfix|feature)\/.+' --ignore '(staging|develop|master)'"
   },
   "husky": {
     "hooks": {
