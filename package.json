@@ -1,0 +1,44 @@
+{
+  "name": "cypress_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "prettier --write",
+    "pre-commit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
+  "lint-staged": {
+    "!(*).js": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadanisrina/cypress_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadanisrina/cypress_test/issues"
+  },
+  "homepage": "https://github.com/nadanisrina/cypress_test#readme",
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "enforce-branch-name": "^1.1.2",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "lint-staged": "^13.0.3"
+  }
+}
